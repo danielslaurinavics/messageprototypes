@@ -1,0 +1,192 @@
+<html lang="lv">
+    <head>
+        <meta charset="UTF-8">
+        <title>Saskarnes paziņojumu demonstrējums</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+    <body>
+		<div class="container d-flex flex-column align-items-center">
+			<p><b>Kļūdu paziņojumi</b></p>
+			<div class="row align-items-start pb-5">
+				<div class="col">
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#error1">
+						ERR_01
+					</button>
+				</div>
+				<div class="col">
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#error2">
+						ERR_02
+					</button>
+				</div>
+				<div class="col">
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#error3">
+						ERR_03
+					</button>
+				</div>
+                <div class="col">
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#error4">
+						ERR_04, 05, 06
+					</button>
+				</div>
+			</div>
+			<p><b>Brīdinājumu paziņojumi</b></p>
+			<p><b>Informatīvie paziņojumi</b></p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal fade" id="error1" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="d-flex flex-column align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#cc0000" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
+                                <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+                            </svg>
+                            <h4 class="mt-2">Sistēmai neizdevās augšupielādēt failu</h4>
+                            <p class="text-center">Sakarā ar problēmām mūsu galā, sistēmai neizdevās augšupielādēt failu. Mēģiniet atkārtoti augšupielādēt failu. Ja šī kļūda parādās arī turpmāk, sazinieties ar <a href="#">tehnisko atbalstu</a></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Labi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+
+
+
+
+		<div class="modal fade" id="error2" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="d-flex flex-column align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#cc0000" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
+                                <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+                            </svg>
+                            <h4 class="mt-2">Kļūda pieprasījuma apstrādē</h4>
+                            <p class="text-center">Kļūda 0x000A<br>Sistēma nespēja augšupielādēt failu sakarā ar kļūdām, piekļūstot sistēmas serveriem. Pēc kāda laika, mēģiniet vēlreiz.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Labi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="modal fade" id="error3" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="d-flex flex-column align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#cc0000" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
+                                <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+                            </svg>
+                            <h4 class="mt-2">Ak vai, kaut kas nogāja greizi.</h4>
+                            <p class="text-center">Sistēmai kaut kas nobruka mūsu galā, tāpēc mēs nespējām augšupielādēt failu. Lūdzu, pagaidi un pamēģini vēlāk. <a href="#">Tehniskā atbalsta</a> komanda ir gatava palīdzēt, ja ilgstoši neizdodas.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Labi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="modal fade" id="error4" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        
+                            <div class="alert alert-danger d-flex px-2 py-1 my-1 align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
+                                    <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+                                </svg>
+                                <div class="px-4 text-wrap">Jūs norādījāt nekorektu e-pasta adresi!<br>Labojiet kļūdu un mēģiniet vēlreiz.</div>
+                            </div>
+                        <form class="form-floating">
+                            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="janis.berzins@">
+                            <label for="floatingInputValue">E-pasta adrese</label>
+                            
+                            <button type="button" class="btn btn-primary mt-3">Iesniegt</button>
+                        </form>
+                        <br><br><br><br><br>
+                        
+                            <div class="alert alert-danger d-flex px-2 py-1 my-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
+                                    <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+                                </svg>
+                                <div class="px-4">Norādiet derīgu e-pasta adresi</div>
+                            </div>
+                        <form class="form-floating">
+                            <input type="email" class="form-control" id="floatingInputValueA" placeholder="name@example.com" value="janis.berzins@">
+                            <label for="floatingInputValueA">E-pasta adrese</label>
+                            
+                            <button type="button" class="btn btn-primary mt-3">Iesniegt</button>
+                        </form>
+                        <br><br><br><br><br>
+                        <form class="form-floating">
+                            <input type="email" class="form-control" id="floatingInputValueB" placeholder="name@example.com" value="janis.berzins@">
+                            <label for="floatingInputValueB">E-pasta adrese</label>
+                        </form>
+                        <form class="form-floating">
+                            <input type="password" class="form-control" id="floatingInputValue2" placeholder="name@example.com" value="parole">
+                            <label for="floatingInputValue2">Parole</label>
+                        </form>
+                        <form class="form-floating">    
+                            <input type="text" class="form-control" id="floatingInputValue3" placeholder="name" value="Jānis">
+                            <label for="floatingInputValue3">Vārds</label>
+                        </form>
+                        <form class="form-floating">    
+                            <input type="text" class="form-control" id="floatingInputValue4" placeholder="surname" value="Bērziņš">
+                            <label for="floatingInputValue4">Uzvārds</label>
+                            
+                            <button type="button" class="btn btn-primary mt-3">Iesniegt</button>
+                            <br><br><br>
+                            <div class="alert alert-danger d-flex px-2 py-1 my-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc0000" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
+                                    <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+                                </svg>
+                                <div class="px-4">Norādiet derīgu e-pasta adresi</div>
+                            </div>
+                        </form>
+                            
+                        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Labi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="./scripts.js"></script>
+    </body>
+</html>
